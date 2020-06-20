@@ -21,8 +21,8 @@ class Song
     new_song
   end
   
-  # def artist_name=(name)
-  #   (my_artist = self.all.find { |artist| artist.name == name }) ? my_artist : self.new(name)
-  # end
+  def artist_name=(name)
+    (my_artist = self.all.find { |artist| artist.name == name }) ? my_artist : self.new(name)
+  end
   
 end
