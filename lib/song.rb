@@ -28,7 +28,7 @@ class Song
   end
   
   def artist_name=(name)
-    (my_song = Artist.all.find { |artist| artist.name == name }) ? my_song : Artist.new(name)
+    @artist = Artist.find_or_create_by_name
   end
   
 end
