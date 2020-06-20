@@ -22,7 +22,7 @@ class Song
     
     artist, title = filename.split(" - ")
     self.new(title).tap { |song|
-      song.artist = Artist.
+      song.artist = Artist.find_or_create_by_name
     }
   end
   
