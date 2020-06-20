@@ -21,7 +21,6 @@ class Song
     # new_song
     
     artist, title = filename.split(" - ")
-    binding.pry
     self.new(title).tap { |song|
       song.artist = Artist.find_or_create_by_name(artist)
       song.artist.add_song(song)
