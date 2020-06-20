@@ -21,7 +21,9 @@ class Song
     new_song
     
     artist, title = filename.split(" - ")
+    self.new(title).tap { |song|
     
+    }
   end
   
   def artist_name=(name)
